@@ -69,7 +69,6 @@ public class main {
 
         board b = new board(8, knightPos, GoalPos, obstacles);
         b.initalizeBoard();
-        System.out.println(b.full[1][5]);
         b.reachGoal();
 
     }
