@@ -12,15 +12,15 @@ public class main {
 
         String[] temp;
         System.out.println("Please Enter position of knight: \n" +
-                "Example X Y");
-        temp = sc.nextLine().split(" ");
+                "Example X,Y");
+        temp = sc.nextLine().split(",");
 
         while (Integer.valueOf(temp[0]) > 7 || Integer.valueOf(temp[1]) > 7
                 || Integer.valueOf(temp[0]) < 0 || Integer.valueOf(temp[1]) < 0) {
             System.out.println("Invalid Input in the Position of the Knight");
             System.out.println("Please Enter position of knight: \n" +
-                    "Example X Y");
-            temp = sc.nextLine().split(" ");
+                    "Example X,Y");
+            temp = sc.nextLine().split(",");
         }
 
         knightPos[0] = Integer.valueOf(temp[0]);
@@ -28,14 +28,14 @@ public class main {
 
 
         System.out.println("Please Enter position of Goal: \n" +
-                "Example X Y");
-        temp = sc.nextLine().split(" ");
+                "Example X,Y");
+        temp = sc.nextLine().split(",");
 
         while (Integer.valueOf(temp[0]) > 7 || Integer.valueOf(temp[1]) > 7
                 || Integer.valueOf(temp[0]) < 0 || Integer.valueOf(temp[1]) < 0) {
             System.out.println("Invalid Input in the Position of the Goal Title");
             System.out.println("Please Enter position of Goal: \n" +
-                    "Example X Y");
+                    "Example X,Y");
             temp = sc.nextLine().split(" ");
         }
 
@@ -51,16 +51,16 @@ public class main {
         for (int i = 0; i < num; i++) {
 
             System.out.println("Please Enter where is the obstacle number " + (i + 1) +
-                    "\nExample X Y");
+                    "\nExample X,Y");
 
-            temp = sc.nextLine().split(" ");
+            temp = sc.nextLine().split(",");
 
             while (Integer.valueOf(temp[0]) > 7 || Integer.valueOf(temp[1]) > 7
                     || Integer.valueOf(temp[0]) < 0 || Integer.valueOf(temp[1]) < 0) {
                 System.out.println("Invalid Input in the Position of the Obstacle number " + (i + 1));
                 System.out.println("Please Enter where is the obstacle number " + (i + 1) +
-                        "\nExample X Y");
-                temp = sc.nextLine().split(" ");
+                        "\nExample X,Y");
+                temp = sc.nextLine().split(",");
             }
 
             obstacles[i][0] = Integer.valueOf(temp[0]);
